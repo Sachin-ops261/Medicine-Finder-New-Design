@@ -57,6 +57,17 @@
     height: 100%;
 }
 
+@keyframes floteRight {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .leftSide{
     width: 50%;
     /* background-color: aqua; */
@@ -71,13 +82,14 @@
 }
 
 .leftSide>h1{
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1>span{
-    display: block;
+.leftSide>h1, .leftSide>p{
+    animation: floteRight 1.5s ease-out forwards;
 }
+
 
 .leftSide>p{
     font-size: 20px;
@@ -95,6 +107,17 @@ h1>span{
     padding-right: 30px;
 }
 
+@keyframes floteDown {
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .label{
     display: block;
     font-size: 20px;
@@ -102,6 +125,18 @@ h1>span{
     margin-bottom: 10px;
     padding-left: 10px;
     color: white;
+    animation: floteDown 1s ease-out forwards;
+}
+
+@keyframes floteLeft {
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 #med{
@@ -111,6 +146,7 @@ h1>span{
     padding: 0 10px;
     border-radius: 20px;
     border: 1px solid black;
+    animation: floteLeft 1s ease-out forwards;
 }
 
 #med:focus{
@@ -140,6 +176,17 @@ h1>span{
     width: 100%;
 }
 
+@keyframes floteUp {
+    from{
+        transform: translateY(50px) scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
 .original,.org,.alt,.alternative{
     margin-left: 130px;
 }
@@ -156,6 +203,7 @@ h1>span{
     /* padding-left: 30px; */
     margin-bottom: 30px;
     overflow: hidden;
+    animation: floteUp .5s ease-out forwards;
 }
 
 .org,.Alter,.alt{
@@ -169,6 +217,7 @@ h1>span{
     padding: 6px 14px;
     font-size: 17px;
     display: none;
+    animation: floteUp .5s ease-out forwards;
 }
 
 .alt{
