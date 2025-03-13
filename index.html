@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headder">
+            <img src="https://content.jdmagicbox.com/comp/lucknow/l9/0522px522.x522.220327203038.d6l9/catalogue/prdhan-mantri-jan-aushadhi-kendra-lucknow-chemists-0fkvatjnq1.jpg" alt="">
+            <div class="rightSide">
+                <a href="">Home</a>
+                <a href="">Contact us</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainContent">
+                <div class="inputArea">
+                    <label class="label" for="med">Medicine Name</label>
+                    <input type="text" id="med" oninput="find(event)">
+                </div>
+                <p id="noDataMessage"></p>
+                <button class="Alter" onclick="addAlternative()">Find Alternatives</button>
+                <div class="searchResult">
+                    <div class="product">
+                        <p onclick="displayOrg()" class="org">Original Medicine</p>
+                        <div class="original">
+                            <!-- <div class="newDiv">
+                                <img src="images/back.jpg" alt="">
+                                <div class="content">
+                                    <p>Name: Benadryl</p>
+                                    <p>Manufacturer: Cipla</p>
+                                    <p class="price">Per Unit Price: Rs.12</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <p class="alt">Best Alternatives</p>
+                        <div class="alternative">
+                            <!-- <div class="oneItem">
+                                <img src="images/back2.jpg" alt="">
+                                <div class="content2">
+                                    <p>Name: something</p>
+                                    <p>Manufactirer: something</p>
+                                    <p class="price">Price: something</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftSide">
+                <h1>Your Trusted <span>Medicine Finder</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
