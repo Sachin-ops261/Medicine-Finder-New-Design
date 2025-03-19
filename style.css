@@ -27,14 +27,14 @@
 }
 
 .rightSide>a{
-    border: 2px solid blue;
+    border: 2px solid black;
     padding: 5px 15px;
     border-radius: 10px;
 }
 
 .rightSide>a:hover{
-    background-color: skyblue;
-    box-shadow: 4px 4px 0px skyblue;
+    background-color: #047468;
+    /* box-shadow: 4px 4px 0px skyblue; */
     color: white;
 }
 
